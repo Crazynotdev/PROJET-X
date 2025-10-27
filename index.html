@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeMove - Apprenez, Partagez, Gagnez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">WeMove</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="signup.html" class="cta">S'inscrire</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" id="burger-toggle">☰</button>
+            <nav class="mobile-nav" id="mobile-menu">
+                <ul>
+                    <li><a href="profile.html">Mon Profil</a></li>
+                    <li><a href="settings.html">Paramètres</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="signup.html">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue sur WeMove</h1>
+                <p>Apprenez des compétences essentielles, invitez vos amis et gagnez avec notre système d'affiliation.</p>
+                <a href="signup.html" class="cta large">Rejoignez-nous pour 3000 FCFA</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Pourquoi WeMove ?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Formations Interactives</h3>
+                        <p>Accédez à des cours sur le développement personnel et professionnel.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Système d'Affiliation</h3>
+                        <p>Gagnez en invitant des amis à rejoindre la plateforme.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Communauté</h3>
+                        <p>Partagez et apprenez ensemble.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard">
+            <div class="container">
+                <h2>Top Affiliés</h2>
+                <ul id="leaderboard-list">
+                    <!-- a vous pour le backend -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WeMove. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
