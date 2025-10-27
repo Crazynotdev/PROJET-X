@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - WeMove</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">WeMove</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="#" class="cta">Déconnexion</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" id="burger-toggle">☰</button>
+            <nav class="mobile-nav" id="mobile-menu">
+                <ul>
+                    <li><a href="profile.html">Mon Profil</a></li>
+                    <li><a href="settings.html">Paramètres</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="#">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="container">
+                <h1>Dashboard</h1>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Gains Totaux</h3>
+                        <p id="total-gains">0 FCFA</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Invités Directs</h3>
+                        <p id="direct-invites">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Niveau 2</h3>
+                        <p id="level2">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Niveau 3</h3>
+                        <p id="level3">0</p>
+                    </div>
+                </div>
+                <h2>Vos Affiliations</h2>
+                <ul id="affiliations-list">
+                    <!-- Contenu dynamique via backend -->
+                </ul>
+                <h2>Formations en Cours</h2>
+                <div class="grid">
+                    <!-- Cartes dynamiques via backend -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WeMove. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
