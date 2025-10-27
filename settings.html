@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres - WeMove</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">WeMove</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="#" class="cta">Déconnexion</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" id="burger-toggle">☰</button>
+            <nav class="mobile-nav" id="mobile-menu">
+                <ul>
+                    <li><a href="profile.html">Mon Profil</a></li>
+                    <li><a href="settings.html">Paramètres</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="#">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="settings">
+            <div class="container">
+                <h1>Paramètres</h1>
+                <form id="settings-form" action="/settings" method="POST">
+                    <label for="password">Changer Mot de passe</label>
+                    <input type="password" id="password" name="password">
+                    
+                    <label for="notifications">Notifications</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+                    
+                    <button type="submit" class="cta">Sauvegarder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WeMove. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
